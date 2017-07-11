@@ -4,7 +4,7 @@ MAINTAINER dookie23 <dookie10@gmail.com>
 USER root
 
 # Install system dependencies
-apt-get update \
+RUN apt-get update \
   && apt-get install -y --no-install-recommends \
   git \
   jq \
