@@ -14,3 +14,9 @@ RUN R -e "install.packages(c('dplyr'), repos='http://cloud.r-project.org/')"
 
 # Install Plumber (REST services)
 RUN R -e "install.packages(c('plumber'), repos='http://cloud.r-project.org/')"
+
+# Install packages ('Other packages')
+RUN R -e "install.packages(c('ltm', 'lazyeval', 'NMF', 'fitdistrplus', 'arules', 'arulesSequence', 'mvtnorm'), repos='http://cloud.r-project.org/')"
+
+# Install Rserve
+RUN R -e "install.packages(c('Rserve'))"
